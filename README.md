@@ -22,3 +22,6 @@ Run `ng test`  or `ng test --code-coverage` to execute the unit tests via [Karma
 ~~Note: I am aware of the npm audit vulnerabilities, and will update dependancies as soon as possible~~
 
 Updated
+
+
+TODO accessibility
