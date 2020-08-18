@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { QuestionComponent } from './question.component';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 describe('QuestionComponent', () => {
   let component: QuestionComponent;
@@ -19,10 +19,10 @@ describe('QuestionComponent', () => {
     fixture = TestBed.createComponent(QuestionComponent);
     component = fixture.componentInstance;
     component.data =  {
-      "id": "1",
-      "question": "What vehicles are covered?",
-      "answer": "a."
-    }
+      id: '1',
+      question: 'What vehicles are covered?',
+      answer: 'a.'
+    };
     fixture.detectChanges();
   });
 
@@ -35,13 +35,13 @@ describe('QuestionComponent', () => {
   });
   fit('should toggle', () => {
     const questionarea = fixture.debugElement.nativeElement.querySelector('.question');
-    expect(component.hide).toBe('hidden')
-    expect(component.rotate).toBe('standard')
-    questionarea.click()
-    expect(component.hide).toBe('open')
-    expect(component.rotate).toBe('rotate')
-    questionarea.click()
-    expect(component.hide).toBe('hidden')
-    expect(component.rotate).toBe('standard')
+    expect(component.hide).toBe('hidden');
+    expect(component.rotate).toBe('standard');
+    questionarea.click();
+    expect(component.hide).toBe('open');
+    expect(component.rotate).toBe('rotate');
+    questionarea.click();
+    expect(component.hide).toBe('hidden');
+    expect(component.rotate).toBe('standard');
   });
 });

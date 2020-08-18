@@ -9,7 +9,7 @@ import { GlobalErrorHandlerService } from './services/global-error-handler.servi
 import { QuestionsComponent } from './questions/questions.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {QuestionComponent} from "./question/question.component";
+import {QuestionComponent} from './question/question.component';
 
 @NgModule({
   declarations: [

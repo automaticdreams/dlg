@@ -1,13 +1,14 @@
 import { TestBed, inject } from '@angular/core/testing';
 
 import { DataService } from './data.service';
-import { Question } from "../models/question";
+import { Question } from '../models/question';
 import { of } from 'rxjs';
-import {HttpClientTestingModule, HttpTestingController} from "@angular/common/http/testing";
+import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
 
 describe('DataService', () => {
-  let typeQuestion: Question[]
-  const dataURL = 'http://127.0.0.1:8080/faqs.json'
+  // tslint:disable-next-line:prefer-const
+  let typeQuestion: Question[];
+  const dataURL = 'http://127.0.0.1:8080/faqs.json';
 
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -59,5 +60,5 @@ describe('DataService', () => {
 
     ));
 
-  })
+  });
 });

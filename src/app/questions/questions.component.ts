@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import { DataService } from '../services/data.service';
-import { Question } from "../models/question";
+import { Question } from '../models/question';
 
 @Component({
   selector: 'app-questions',
@@ -9,7 +9,7 @@ import { Question } from "../models/question";
 })
 export class QuestionsComponent implements OnInit {
   questions: Question[];
-  selectedQuestion: Question
+  selectedQuestion: Question;
   constructor(private data: DataService) {
   }
 

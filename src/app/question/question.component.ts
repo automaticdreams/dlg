@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Question} from "../models/question";
+import {Question} from '../models/question';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 @Component({
   selector: 'app-question',
@@ -22,17 +22,17 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   ]
 })
 export class QuestionComponent implements OnInit {
-  @Input() data: Question
-   public hide: string
-  public rotate: string
+  @Input() data: Question;
+   public hide: string;
+  public rotate: string;
 
   constructor() {
-     this.hide = 'hidden'
-    this.rotate = 'standard'
+     this.hide = 'hidden';
+     this.rotate = 'standard';
   }
   toggle() {
-     this.hide = this.hide === 'hidden'? 'open' : 'hidden';
-     this.rotate = this.rotate === 'standard'? 'rotate': 'standard'
+     this.hide = this.hide === 'hidden' ? 'open' : 'hidden';
+     this.rotate = this.rotate === 'standard' ? 'rotate' : 'standard';
   }
   ngOnInit(): void {
   }

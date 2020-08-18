@@ -3,7 +3,7 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { QuestionsComponent } from './questions.component';
 import { DataService } from '../services/data.service';
-import {of} from "rxjs";
+import {of} from 'rxjs';
 
 const dataServiceStub = {
   getQuestions() {
