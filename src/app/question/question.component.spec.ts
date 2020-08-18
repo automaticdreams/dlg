@@ -33,7 +33,7 @@ describe('QuestionComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h2').textContent).toContain('Q1 What vehicles are covered?');
   });
-  fit('should toggle', () => {
+  it('should toggle', () => {
     const questionarea = fixture.debugElement.nativeElement.querySelector('.question');
     expect(component.hide).toBe('hidden');
     expect(component.rotate).toBe('standard');
