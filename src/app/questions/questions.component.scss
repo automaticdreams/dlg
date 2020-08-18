@@ -1,0 +1,24 @@
+@import "~src/_variables.scss";
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+h2 {
+  font-size: inherit;
+  margin:0;
+  span {
+    font: bold 0.5em/2 oswaldlight;
+  }
+  &.selected {
+  }
+}
+
+ul .mat-expansion-panel {
+  box-shadow: none !important;
+  border-bottom: 2px solid $borderColour;
+  border-radius: 0;
+}
+

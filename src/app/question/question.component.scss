@@ -1,0 +1,55 @@
+@import "~src/_variables.scss";
+.question {
+  border-bottom: 3px solid $borderColour;
+
+}
+.answer {
+  overflow: hidden;
+  div {
+    padding: 18px 24px;
+  }
+}
+.header {
+  transition: 10ms background-color ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18px;
+  h2 {
+    font: normal 27px/3 oswaldbold;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    span {
+      font: normal 0.5em/1.5 oswald_regularregular;
+      margin: 0 30px;
+    }
+  }
+  .icon {
+    background: $iconColor;
+    width: 49px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before {
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-rotate__icon" viewBox="0 0 357 357"><g id="add"><path d="M357,204H204v153h-51V204H0v-51h153V0h51v153h153V204z"/></g></svg>');
+      width: 24px;
+      height: 24px;
+      background-size: contain;
+      content: '';
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      transition: 500ms all ease-in-out;
+    }
+
+  }
+  &.rotate {
+    background-color: $openHeadColor;
+    .icon::before {
+      transform: rotate(-45deg);
+      transform-origin: center;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<div class="question" (click)="toggle()">
+  <div class="header" [ngClass]="rotate">
+    <h2>Q{{data.id}} <span>{{data.question}}</span></h2>
+    <span class="icon"></span>
+  </div>
+  <div class="answer" [@expand]="hide">
+    <div>{{data.answer}}</div>
+  </div>
+</div>
+
