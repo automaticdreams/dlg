@@ -1,5 +1,7 @@
 @import "~src/_variables.scss";
 .question {
+  background: none;
+  border: 0;
   border-bottom: 3px solid $borderColour;
 
 }
